@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | HRUMBLES AI Suite</title>
+    <link rel="stylesheet" href="./index.css"> <!-- Link to external CSS -->
+    <style>
+        .contact-form {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+        }
+
+        .input-group {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+        }
+
+        .btn-submit {
+            grid-column: span 2;
+            background: linear-gradient(45deg, #f7b940, #87a67e);
+            border: none;
+            padding: 10px 15px;
+            font-size: 14px;
+            font-weight: bold;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            align-self: flex-end;
+        }
+
+        .btn-submit:hover {
+            background: linear-gradient(45deg, #87a67e, #f7b940);
+        }
+    </style>
+</head>
+<body>
+    <section class="n-section ele-3 pb-0">
+        <style>
+            .text_anim {
+              background-image: linear-gradient(360deg, #606060, #89A880 40%, #F7B940 80%);
+              background-size: 150% 100%;
+              background-repeat: no-repeat;
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              background-clip: text;
+              animation: 1.2s cubic-bezier(0.85, 0.26, 0.89, 0.93);
+              animation-iteration-count: 1;
+              animation-fill-mode: backwards;
+              animation-delay: 0.4s;
+            }</style>
+        <div class="w-layout-blockcontainer container-wide w-container">
+            <div style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap; text-align: center; gap: 10px;">
+                <h2 style="font-size: 2.5rem; font-weight: bold; margin: 0;">
+                    Get in Touch with <span class="text_anim">HRUMBLES AI Suite</span>
+                </h2>
+                <p style="font-size: 1.2rem; color: #b0b0b0; margin: 0;">
+                    Fill in the details below, and our team will reach out to assist you.
+                </p>
+            </div>
+            <div class="fix-grid2">
+                <div class="f-column">
+                    <form id="contact-form" class="contact-form">
+                        <div class="input-group">
+                            <label for="first-name">First Name</label>
+                            <input type="text" id="first-name" name="first-name" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="last-name">Last Name</label>
+                            <input type="text" id="last-name" name="last-name" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="organization">Organization</label>
+                            <input type="text" id="organization" name="organization" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="contact-no">Contact No</label>
+                            <input type="tel" id="contact-no" name="contact-no" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="address">Address</label>
+                            <textarea id="address" name="address" rows="2" required></textarea>
+                        </div>
+                        <div class="input-group">
+                            <label for="domain">Business Domain</label>
+                            <input type="text" id="domain" name="domain" required>
+                        </div>
+                        <button type="submit" class="btn-submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
